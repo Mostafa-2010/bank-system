@@ -8,9 +8,9 @@ def save(accounts):
     with open('data.json', 'w') as f:
         json.dump(accounts, f, indent=4)
         
-def seperate():   # Format function
+def separate():   # Format function
     print('∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙')
-    
+    time.sleep(2)
 
 def check_data(accounts, name_f, name_l, password, password_confirm, account_name):       # security and verfication function
     if name_f == '' or name_l == '':
@@ -62,7 +62,7 @@ def clear(accounts):
     
 def close():
     print('--------------------------------closing the program--------------------------------'.center(120))
-    time.sleep(8)
+    time.sleep(5)
     sys.exit()
 
 def show(accounts):
